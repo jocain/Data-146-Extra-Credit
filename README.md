@@ -1,4 +1,4 @@
-## Data-146-Extra-Credit
+## Data 146 Extra Credit
 # Classification Analysis of Liberian Demographic Data
 
 ### Description
