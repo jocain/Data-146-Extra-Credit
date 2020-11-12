@@ -7,10 +7,10 @@ In this project, I explore a veriety of classification methods as a means of mod
 ### Data Overview
 
 Pairplot
-![Pairplot of Demographics Data](https://jocain.github.io/Data-146-Extra-Credit/logeducation.png)
+![Pairplot of Demographics Data](https://jocain.github.io/Data-146-Extra-Credit/parwise.png)
 
 Histogram of Target Data
-![Histogram of Target Data](https://jocain.github.io/Data-146-Extra-Credit/parwise.png)
+![Histogram of Target Data](https://jocain.github.io/Data-146-Extra-Credit/logeducation.png)
 
 ### Logistic Regression
 
