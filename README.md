@@ -6,8 +6,12 @@ In this project, I explore a veriety of classification methods as a means of mod
 
 ### Data Overview
 
-The data looks like this.
-![Pairplot of Demographics Data](https://octodex.github.com/images/yaktocat.png)
+Pairplot
+![Pairplot of Demographics Data](https://jocain.github.io/Data-146-Extra-Credit/logeducation.png)
+
+Histogram of Target Data
+![Histogram of Target Data](https://jocain.github.io/Data-146-Extra-Credit/parwise.png)
+
 ### Logistic Regression
 
 I applied multiple different logistic regression models to the data, varying the scaling or normalization method and distance weights. The either no scaling/normalization or one of the following sklearn.preprocessing classes were applied to the data prior to modeling: Normalizer, Standard Scaler, Robust Scaler, MinMax Scaler. The model itself either did or did not employ weighting proportional to the class proportions within the test data. The combinations of these settings resulted in a total of ten models, each of which underwent a K-Fold Validation for  k = 15, and were set to a maximum iteration limit of 500 iterations. The table below shows the results of this:
@@ -24,7 +28,7 @@ I applied multiple different logistic regression models to the data, varying the
 |                  |  Robust Scal.  |
 |                  |   Normalizer   |
 
-As it turned out, even with scaling or normalization, not all the models. However, whether the model converged or not, there seemed to be very little effect of the 
+As it turned out, even with scaling or normalization, not all the models. However, whether the model converged or not, the scaling or normalization method seemed to have very little effect on the accuracy or error of the model. The one exception to this might be 
 
 ### k-Nearest Neighbor
 
