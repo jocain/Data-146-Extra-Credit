@@ -7,13 +7,13 @@ In this project, I explore a veriety of classification methods as a means of mod
 ### Data Overview
 
 The data looks like this.
-
+![Pairplot of Demographics Data](https://octodex.github.com/images/yaktocat.png)
 ### Logistic Regression
 
 I applied multiple different logistic regression models to the data, varying the scaling or normalization method and distance weights. The either no scaling/normalization or one of the following sklearn.preprocessing classes were applied to the data prior to modeling: Normalizer, Standard Scaler, Robust Scaler, MinMax Scaler. The model itself either did or did not employ weighting proportional to the class proportions within the test data. The combinations of these settings resulted in a total of ten models, each of which underwent a K-Fold Validation for  k = 15, and were set to a maximum iteration limit of 500 iterations. The table below shows the results of this:
 
 |    Weighting?    |   Scal./Norm.  | Training Score |   Test Score   |  Training MSE  |    Test MSE    | Convergence? |
-| No Dist. Weights | No Scal./Norm. |
+| No Dist. Weights | No Scal./Norm. | 0.572349962346 | 0.572263996647637 | 1.0667149802956444 | 1.0676327420567675 | No
 |                  | Standard Scal. |
 |                  |  MinMax Scal.  |
 |                  |  Robust Scal.  |
@@ -23,6 +23,8 @@ I applied multiple different logistic regression models to the data, varying the
 |                  |  MinMax Scal.  |
 |                  |  Robust Scal.  |
 |                  |   Normalizer   |
+
+As it turned out, even with scaling or normalization, not all the models. However, whether the model converged or not, there seemed to be very little effect of the 
 
 ### k-Nearest Neighbor
 
