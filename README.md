@@ -6,6 +6,14 @@ In this project, I explore a veriety of classification methods as a means of mod
 
 ### Data Overview
 
+The data used in this project was collected in the Liberia Demographic and Health Survey of 2013. The survey was conducted by the Liberia Institute of Statistics and Geo-Information (LISGI) from mid-March to mid-July in 2013, and was funded by a number of international governmnet and non-goverment organizations, including USAID and UNICEF. The survey covered a broad stroke of information ranging from HIV testing to access to drinking water. For the purposes of this project, Location, Size, Wealth, Gender, and Age were used as features in an attempt to model a target variable, Education. 
+
+Location, Wealth, Education, and Gender are nominal variables, whereas Age and Size are treated as continuous variables. Location refers to six groups of counties paritioned by LISGI, shown in the map below:
+
+![Map](https://jocain.github.io/Data-146-Extra-Credit/map.png)
+
+
+
 Pairplot
 ![Pairplot of Demographics Data](https://jocain.github.io/Data-146-Extra-Credit/parwise.png)
 
@@ -35,6 +43,20 @@ As it turned out, even with scaling or normalization, not all the models. Howeve
 ### k-Nearest Neighbor
 
 k-Nearest Neighbor (kNN) modeling results in this. 
+
+![k-NN k-Variation Example](https://jocain.github.io/Data-146-Extra-Credit/knnexample.png)
+
+|    Weighting?    |   Scal./Norm.  | Training Score |   Test Score   |  Training MSE  |    Test MSE    |
+| No Dist. Weights |      None      | 0.716522533716 | 0.704535825798 | 0.682558462471 | 0.706238388749 |
+|                  | Standard Scal. | 0.739052179696 | 0.705385878203 | 0.572102599014 | 0.626166534888 |
+|                  |  MinMax Scal.  | 0.727945121679 | 0.713038640241 | 0.583785893911 | 0.609409249257 |
+|                  |  Robust Scal.  | 0.733849724996 | 0.703705941766 | 0.578873790882 | 0.626311849112 |
+|                  |   Normalizer   | 0.694363219362 | 0.671249984273 | 0.665290515902 | 0.704973142708 |
+|  Dist. Weights   |      None      | 0.915823046197 | 0.681909756531 | 0.205197721293 | 0.748047225993 |
+|                  | Standard Scal. | 0.915823046197 | 0.688255774454 | 0.205197721293 | 0.683508548493 |
+|                  |  MinMax Scal.  | 0.915823046197 | 0.691926502216 | 0.205197721293 | 0.676477631719 |
+|                  |  Robust Scal.  | 0.915823046197 | 0.687488402056 | 0.205197721293 | 0.687324590479 |
+|                  |   Normalizer   | 0.910830941655 | 0.665277242545 | 0.214456074666 | 0.745102682245 |
 
 ### Decision Tree/Random Forrest
 
