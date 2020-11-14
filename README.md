@@ -1,5 +1,3 @@
-# Classification Analysis of Liberian Demographic Data
-
 ### Description
 
 In this project, I explore a variety of classification methods as a means of modeling education levels in a set of data concerning Liberian demographic information. 
