@@ -100,7 +100,7 @@ The purpose of this project was to model education levels in Liberia using the L
 
 In general, Decision Tree/Random Forest and k-NN modeling greatly outperformed Logistic Regression modeling:
 
-![Avg Model Scores](https://jocain.github.io/Data-146-Extra-Credit/dtexample.png)
+![Avg Model Scores](https://jocain.github.io/Data-146-Extra-Credit/final.png)
 
 While class and distance weighting did not particularly help results, I still believe that finding a way to address the difference in class proportions within the data is critical to improving these models. While purely speculative, in future variations of this project, I believe a further breakdown of location and wealth might help improve the models' accuracy, especially if location breakdowns can target particular counties or school districts, if such an equivalent to the American style of geographic schooling break downs exists there. Additionally, non-demographic factors such as access to water might also affect an individual's ability to attend school and might be a productive addition to the current dataset. 
 
